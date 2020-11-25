@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".view.DetailsActivity">
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+                <ImageView
+
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/dimen30dp"
+                    android:layout_height="@dimen/dimen30dp"
+                    android:layout_margin="@dimen/dimen20dp"
+                    android:contentDescription="@string/add_to_cart"
+                    android:src="@drawable/ic_arrow_back" />
+
+
+                <TextView
+                    android:id="@+id/nameOfProductUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen25sp"
+                    tools:text="ПРОДУКТ" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nameOfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen20sp"
+                tools:text="Apple iPhone 7 plus without Facetime - 32GB, 4LTC, Silver" />
+
+            <TextView
+                android:id="@+id/nameOfSupplayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_shadow_end_color"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen18sp"
+                tools:text="Apple iPhone 7 plus without Facetime - 32GB, 4LTC, Silver" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/imageOfProduct"
+                android:layout_width="230dp"
+                android:layout_height="250dp"
+                android:background="@color/white"
+                android:contentDescription="@string/product_image"
+                android:src="@drawable/dummy_data"
+                tools:scaleType="fitXY" />
+
+
+                <TextView
+                    android:id="@+id/discription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:padding="10dp"
+                    android:layout_marginStart="230dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen20sp"
+                    tools:text="opisanie" />
+
+                <TextView
+                    android:id="@+id/cat_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:padding="10dp"
+                    android:layout_below="@id/discription"
+                    android:layout_marginStart="230dp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dimen15dp"
+                    tools:text="cat_1" />
+                <TextView
+                    android:id="@+id/cat_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:padding="10dp"
+                    android:layout_marginStart="230dp"
+                    android:layout_below="@id/cat_1"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dimen15dp"
+                    tools:text="cat_2" />
+                <TextView
+                    android:id="@+id/cat_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:padding="10dp"
+                    android:layout_below="@id/cat_2"
+                    android:layout_marginStart="230dp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dimen15dp"
+                    tools:text="cat_3" />
+
+            </RelativeLayout>
+
+            <View
+
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1dp"
+                android:background="@color/lightGray" />
+
+
+            <TextView
+
+                android:id="@+id/priceOfProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dimen25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="40dp"
+                tools:text="2,399.00" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:background="@color/blue"
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:id="@+id/txtInBasket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="1dp"
+                    android:padding="@dimen/dimen1dp"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+                    android:textSize="@dimen/dimen15dp"
+                    android:text="@string/basket" />
+
+                <ImageView
+
+                    android:id="@+id/imgK"
+                    android:layout_width="@dimen/dimen20dp"
+                    android:layout_height="@dimen/dimen20dp"
+                    android:layout_margin="@dimen/dimen10dp"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/add_to_cart"
+                    android:src="@drawable/ic_shopping_cart_white" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
